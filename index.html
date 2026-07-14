@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Web App</title>
+</head>
+<body>
 
+<h2>Hello Aryan</h2>
+
+<input type="text" id="name" placeholder="Apna naam likho">
+<br><br>
+
+<button onclick="showName()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function showName() {
+  let name = document.getElementById("name").value;
+  document.getElementById("result").innerHTML = "Hello " + name;
+}
+</script>
+
+</body>
+</html>
